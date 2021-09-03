@@ -479,7 +479,7 @@ ol {
 	background: rgba(255, 255, 255, 0.1);
 	border-radius: 50%;
 	display: inline-block;
-	color: #f36100;
+	color:  #63c3db ;
 	line-height: 90px;
 	text-align: center;
 	-webkit-transition: all 0.3s;
@@ -536,7 +536,7 @@ ol {
 }
 
 .class-item .ci-text span {
-	color: #f36100;
+	color:  #63c3db ;
 	font-size: 12px;
 	text-transform: uppercase;
 	font-weight: 700;
