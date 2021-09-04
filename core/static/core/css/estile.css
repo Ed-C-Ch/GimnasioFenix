@@ -611,14 +611,14 @@ ol {
 
 .bs-text .primary-btn {
 	background: transparent;
-	border: 2px solid #f36100;
+	border: 2px solid #63c3db ;
 }
 
 .bs-text .play-btn {
 	display: inline-block;
 	height: 70px;
 	width: 70px;
-	background: #f36100;
+	background: #63c3db ;
 	border-radius: 50%;
 	line-height: 70px;
 	text-align: center;
@@ -671,7 +671,7 @@ ol {
 }
 
 .ps-item:hover .primary-btn.pricing-btn {
-	background: #f36100;
+	background: #63c3db ;
 }
 
 .ps-item:hover .thumb-icon {
@@ -698,7 +698,7 @@ ol {
 
 .ps-item .pi-price h2 {
 	font-size: 60px;
-	color: #f36100;
+	color: #63c3db ;
 	font-weight: 600;
 }
 
@@ -733,7 +733,7 @@ ol {
 
 .ps-item .thumb-icon {
 	font-size: 48px;
-	color: #f36100;
+	color: #63c3db ;
 	position: absolute;
 	left: 50px;
 	bottom: 120px;
@@ -744,64 +744,7 @@ ol {
 	visibility: hidden;
 }
 
-/*---------------------
-  Gallery Section
------------------------*/
 
-.gallery-section {
-	background: #151515;
-	overflow: hidden;
-}
-
-.gallery-section.gallery-page {
-	padding-top: 10px;
-}
-
-.grid-sizer {
-	width: calc(25% - 10px);
-}
-
-.gallery {
-	margin-right: -10px;
-}
-
-.gallery .gs-item {
-	height: 472px;
-	width: calc(25% - 10px);
-	float: left;
-	margin-right: 10px;
-	margin-bottom: 10px;
-}
-
-.gallery .gs-item:hover .thumb-icon {
-	opacity: 1;
-	visibility: visible;
-}
-
-.gallery .gs-item .thumb-icon {
-	font-size: 48px;
-	color: #f36100;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	height: 100%;
-	cursor: pointer;
-	opacity: 0;
-	visibility: hidden;
-	-webkit-transition: all 0.3s;
-	-o-transition: all 0.3s;
-	transition: all 0.3s;
-}
-
-.gallery .gs-item.grid-wide {
-	width: calc(50% - 10px);
-}
 
 /*---------------------
   Team Section
@@ -847,7 +790,7 @@ ol {
 
 .primary-btn.appoinment-btn {
 	background: transparent;
-	border: 2px solid #f36100;
+	border: 2px solid #63c3db;
 	float: right;
 	margin-top: 10px;
 }
@@ -946,7 +889,7 @@ ol {
 
 	height: 65px;
 	width: 65px;
-	background: #f36100;
+	background: #63c3db;
 	border-radius: 50%;
 	line-height: 65px;
 	text-align: center;
@@ -1101,7 +1044,7 @@ ol {
 
 .copyright-text a,
 .copyright-text i {
-	color: #f36100;
+	color: #63c3db;
 }
 
 /*---------------------
@@ -1115,13 +1058,6 @@ ol {
     font-size: large;
 }
 
-.section-title span{
-    color:  #63c3db ;
-}
 
-.section-title h2{
-    padding-top: 1%;
-    color: white;
-}
 
 

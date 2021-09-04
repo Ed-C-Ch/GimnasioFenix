@@ -1,0 +1,59 @@
+{% extends 'core/index.html' %}
+{% load static %}
+
+{% block content %}
+
+
+<div class="contenedor">
+    <img src="{% static 'core/img/portada-contacto.jpg' %}" />
+    <div class="centrado"><h1 style="color: white;">Contactanos</h1> <br> <h4 style="color: white;">Home <img src="{% static 'core/img/icono-arrow-2.png' %}" alt=""> Pages
+         <img src="{% static 'core/img/icono-arrow-2.png' %}" alt=""> Contactanos</h4></div>
+  </div>
+
+
+  <section class="contact-section spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="section-title contact-title">
+                    <span>Contactanos</span>
+                    <h2>PONERSE EN CONTACTO</h2>
+                </div>
+                <div class="contact-widget">
+                    <div class="cw-text">
+                        <i><img src="{% static 'core/img/icono-aqui.png' %}" alt=""></i>
+                        <p>lugar<br/> numero lugar</p>
+                    </div>
+                    <div class="cw-text">
+                        <i><img src="{% static 'core/img/icono-telefono.png' %}" alt=""></i>
+                        <ul>
+                            <li>11111111</li>
+                            <li>11111111</li>
+                        </ul>
+                    </div>
+                    <div class="cw-text email">
+                        <i><img src="{% static 'core/img/icono-correo.png' %}" alt=""></i>
+                        <p>correo.GymFenix@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="leave-comment">
+                    <form action="#">
+                        <input type="text" placeholder="Nombre">
+                        <input type="number" placeholder="Número de teléfono (opcional)">
+                        <input type="text" placeholder="Email">
+                        <textarea placeholder="Comentarios"></textarea>
+                        <button style="background-color: #63c3db;" type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contact Section End -->
+
+<!-- Get In Touch Section Begin -->
+
+
+  {% endblock %}
