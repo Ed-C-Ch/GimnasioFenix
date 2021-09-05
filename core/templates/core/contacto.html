@@ -39,11 +39,11 @@
             </div>
             <div class="col-lg-6">
                 <div class="leave-comment">
-                    <form action="#">
-                        <input type="text" placeholder="Nombre">
-                        <input type="number" placeholder="Número de teléfono (opcional)">
-                        <input type="text" placeholder="Email">
-                        <textarea placeholder="Comentarios"></textarea>
+                    <form method="POST">
+                        {% csrf_token %}
+                        <div class="form-group mb-3" style="color: white;">
+                        {{ form.as_table }}
+                        </div>
                         <button style="background-color: #63c3db;" type="submit">Enviar</button>
                     </form>
                 </div>

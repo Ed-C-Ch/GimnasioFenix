@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="{% static 'core/css/galeria.css' %}">
     <link rel="stylesheet" href="{% static 'core/css/equipo.css' %}">
     <link rel="stylesheet" href="{% static 'core/css/contacto.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/nuestroEquipo.css' %}">
 
 </head>
 <body>
@@ -72,7 +73,7 @@
                   <nav class="nav-menu">
                       <ul>
                           <li class="active"><a href="{% url 'index' %}">Home</a></li>
-                          <li><a href="{% url 'sinServicio' %}">Nosotros</a></li>
+                          <li><a href="{% url 'nosotros' %}">Nosotros</a></li>
                           <li><a href="{% url 'sinServicio' %}">Clases</a></li>
                           <li><a href="{% url 'sinServicio' %}">Servicios</a></li>
                           <li><a href="{% url 'sinServicio' %}">Nuestro equipo</a></li>
@@ -152,7 +153,7 @@
               <div class="col-lg-4">
                   <div class="fs-about">
                       <div class="fa-logo">
-                          <a href="#"><img src="img/logo.png" alt=""></a>
+                          <a href="#"><img src="{% static 'core/img/444.png' %}" alt=""></a>
                       </div>
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                           labore dolore magna aliqua endisse ultrices gravida lorem.</p>

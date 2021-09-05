@@ -1,0 +1,16 @@
+.seccion-entrenadores{
+    background-color:  #141414 ;
+    padding-left: 11%;
+    padding-right: 11%;
+    padding-bottom: 40%;
+    padding-top: 10%;
+}
+
+.seccion-entrenadores .card {
+    float: left;
+}
+
+.seccion-entrenadores .card img{
+    width: 100%;
+    height: 50%;
+}
