@@ -1,0 +1,65 @@
+{% extends 'core/index.html' %}
+{% load static %}
+
+    {% block content %}
+
+    <div class="contenedor">
+        <img src="{% static 'core/img/portada-contacto.jpg' %}" />
+        <div class="carousel-caption d-none d-md-block" style="font-size: 1vw; padding-bottom: 7%;">
+          <h5 style="font-size: 300%; text-align: center; color: white;">Clases</h5>
+          <span style="text-transform: uppercase; color: white;">Home <img src="{% static 'core/img/icono-arrow-2.png' %}" alt=""> Pages <img src="{% static 'core/img/icono-arrow-2.png' %}" alt=""><strong style="color: #63c3db;">Clases</strong></span>
+      </div>
+      </div>
+
+    <section style="background-color:  #141414 ; padding-bottom: 10%;" class="horario">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <span>Horario de clases</span>
+                        <h2>Mantente informado de tus clases!</h2>
+                    </div>
+                </div>
+            </div>
+            <table style="background-color: black;" class="table table-dark table-striped">
+                <thead>
+                    <tr>
+                    <th scope="col">Horario</th>
+                    <th scope="col">Lunes</th>
+                    <th scope="col">Martes</th>
+                    <th scope="col">Miercoles</th>
+                    <th scope="col">Jueves</th>
+                    <th scope="col">Viernes</th>
+                    </tr>
+                </thead>
+                <tbody class="casillas">
+                    <tr>
+                    <th scope="row">Hora</th>
+                    <td>Cardio <br> Box</td>
+                    <td>Cardio</td>
+                    <td>Cardio</td>
+                    <td>Cardio</td>
+                    <td>Cardio</td>
+                    </tr>
+                    <tr>
+                    <th scope="row">Hora</th>
+                    <td>Cardio</td>
+                    <td>Cardio</td>
+                    <td>Cardio</td>
+                    <td>Cardio</td>
+                    <td>Cardio</td>
+                    </tr>
+                    <tr>
+                    <th scope="row">Hora</th>
+                    <td>Cardio</td>
+                    <td>Cardio</td>
+                    <td>Cardio</td>
+                    <td>Cardio</td>
+                    <td>Cardio</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    {% endblock %}

@@ -18,6 +18,9 @@ def sinServicio(request):
 def nosotros(request):
     return render(request, 'core/nosotros.html');
 
+def clases(request):
+    return render(request, 'core/clases.html');
+
 def AgregarComentario(request):
     datos = {}
     if request.method == 'POST':

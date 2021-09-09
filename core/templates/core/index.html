@@ -12,105 +12,62 @@
     <link rel="stylesheet" href="{% static 'core/css/equipo.css' %}">
     <link rel="stylesheet" href="{% static 'core/css/contacto.css' %}">
     <link rel="stylesheet" href="{% static 'core/css/nuestroEquipo.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/clases.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/menu.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/detalles.css' %}">
 
 </head>
 <body>
 
   <!--Header-->
     
- 
-  <div class="offcanvas-menu-overlay"></div>
-  <div class="offcanvas-menu-wrapper">
-      <div class="canvas-close">
-          <i class="fa fa-close"></i>
+
+  <nav style="background-color: #090605;" class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img style="width: 10%; height: 10%;" class="logo-header" src="{% static 'core/img/222.png' %}" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><img src="{% static 'core/img/icono-menu.png' %}" alt=""></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="{% url 'index' %}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'nosotros' %}">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'clases' %}">Clases</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'sinServicio' %}">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'sinServicio' %}">Galeria</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'contacto' %}">Contacto</a>
+        </li>
+        </ul>
       </div>
-      <div class="canvas-search search-switch">
-          <i class="fa fa-search"></i>
-      </div>
-      <nav class="canvas-menu mobile-menu">
-          <ul>
-              <li><a href="">Home</a></li>
-              <li><a href="">About Us</a></li>
-              <li><a href="">Classes</a></li>
-              <li><a href="">Services</a></li>
-              <li><a href="">Our Team</a></li>
-              <li><a href="#">Pages</a>
-                  <ul class="dropdown">
-                      <li><a href="./about-us.html">About us</a></li>
-                      <li><a href="./class-timetable.html">Classes timetable</a></li>
-                      <li><a href="./bmi-calculator.html">Bmi calculate</a></li>
-                      <li><a href="./team.html">Our team</a></li>
-                      <li><a href="./gallery.html">Gallery</a></li>
-                      <li><a href="./blog.html">Our blog</a></li>
-                      <li><a href="./404.html">404</a></li>
-                  </ul>
-              </li>
-              <li><a href="./contact.html">Contact</a></li>
-          </ul>
-      </nav>
-      <div id="mobile-menu-wrap"></div>
-      <div class="canvas-social">
-          <a href="#"><i class="fa fa-facebook"></i></a>
-          <a href="#"><i class="fa fa-twitter"></i></a>
-          <a href="#"><i class="fa fa-youtube-play"></i></a>
-          <a href="#"><i class="fa fa-instagram"></i></a>
-      </div>
-  </div>
-  <!-- Offcanvas Menu Section End -->
+    </div>
+  </nav>
+
+  
+  
+
 
   <!-- Header Section Begin -->
-  <header class="header-section">
-      <div class="container-fluid">
-          <div class="row">
-              <div class="col-lg-3">
-                  <div class="logo">
-                      <a href="{% url 'index' %}">
-                          <img style="width: 40%;" src="{% static 'core/img/222.png' %}" alt="">
-                      </a>
-                  </div>
-              </div>
-              <div class="col-lg-6">
-                  <nav class="nav-menu">
-                      <ul>
-                          <li class="active"><a href="{% url 'index' %}">Home</a></li>
-                          <li><a href="{% url 'nosotros' %}">Nosotros</a></li>
-                          <li><a href="{% url 'sinServicio' %}">Clases</a></li>
-                          <li><a href="{% url 'sinServicio' %}">Servicios</a></li>
-                          <li><a href="{% url 'sinServicio' %}">Nuestro equipo</a></li>
-                          <li><a href="#">Paginas</a>
-                              <ul class="dropdown">
-                                  <li><a href="{% url 'sinServicio' %}">About us</a></li>
-                                  <li><a href="{% url 'sinServicio' %}">Classes timetable</a></li>
-                                  <li><a href="{% url 'sinServicio' %}">Bmi calculate</a></li>
-                                  <li><a href="{% url 'sinServicio' %}">Our team</a></li>
-                                  <li><a href="{% url 'sinServicio' %}">Gallery</a></li>
-                                  <li><a href="{% url 'sinServicio' %}">Our blog</a></li>
-                                  <li><a href="{% url 'sinServicio' %}">404</a></li>
-                              </ul>
-                          </li>
-                          <li><a href="{% url 'contacto' %}">Contacto</a></li>
-                      </ul>
-                  </nav>
-              </div>
-              <div class="col-lg-3">
-                  <div class="top-option">
-                      <div class="to-search search-switch">
-                          <i class="fa fa-search"></i>
-                      </div>
-                      <div class="to-social">
-                          <a href="#"><img src="{% static 'core/img/icono-face.png' %}" alt=""></a>
-                          <a target="_blank" href="https://www.instagram.com/fenix_centro_de_entrenamiento/"><img src="{% static 'core/img/icono-insta.png' %}" alt=""></a>
-                          <a href="#"><img src="{% static 'core/img/icono-tiktok.png' %}" alt=""></a>
-                          <a href="#"><img src="{% static 'core/img/icono-whatsapp.png' %}" alt=""></a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="canvas-open">
-              <i class="fa fa-bars"></i>
-          </div>
-      </div>
-  </header>
+
+                <div class="to-social">
+                    <a style="background-color: blue;" class="icon icon-facebook" href="#"><img src="{% static 'core/img/icono-face.png' %}" alt=""></a>
+                    <a class="icon icon-instagram" target="_blank" href="https://www.instagram.com/fenix_centro_de_entrenamiento/"><img src="{% static 'core/img/icono-insta.png' %}" alt=""></a>
+                    <a class="icon icon-tiktok" href="#"><img src="{% static 'core/img/icono-tiktok.png' %}" alt=""></a>
+                    <a class="icon icon-whatsapp" href="#"><img src="{% static 'core/img/icono-whatsapp.png' %}" alt=""></a>
+                </div>
+       
+     
+ 
   <!-- Header End -->
 
   
@@ -152,17 +109,16 @@
           <div class="row">
               <div class="col-lg-4">
                   <div class="fs-about">
-                      <div class="fa-logo">
-                          <a href="#"><img src="{% static 'core/img/444.png' %}" alt=""></a>
+                      <div class="logo-footer">
+                          <a href="{% url 'index' %}"><img style="width: 75%; height: 75%;" src="{% static 'core/img/444.png' %}" alt=""></a>
                       </div>
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                           labore dolore magna aliqua endisse ultrices gravida lorem.</p>
                       <div class="fa-social">
-                          <a href="#"><i class="fa fa-facebook"></i></a>
-                          <a href="#"><i class="fa fa-twitter"></i></a>
-                          <a href="#"><i class="fa fa-youtube-play"></i></a>
-                          <a href="#"><i class="fa fa-instagram"></i></a>
-                          <a href="#"><i class="fa  fa-envelope-o"></i></a>
+                          <a href="#"><img src="{% static 'core/img/icono-face.png' %}" alt=""></a>
+                          <a target="_blank" href="https://www.instagram.com/fenix_centro_de_entrenamiento/"><img src="{% static 'core/img/icono-insta.png' %}" alt=""></a>
+                          <a href="#"><img src="{% static 'core/img/icono-tiktok.png' %}" alt=""></a>
+                          <a href="#"><img src="{% static 'core/img/icono-whatsapp.png' %}" alt=""></a>
                       </div>
                   </div>
               </div>
@@ -170,10 +126,10 @@
                   <div class="fs-widget">
                       <h4>Useful links</h4>
                       <ul>
-                          <li><a href="#">About</a></li>
-                          <li><a href="#">Blog</a></li>
-                          <li><a href="#">Classes</a></li>
-                          <li><a href="#">Contact</a></li>
+                          <li><a href="{% url 'nosotros' %}">Nosotros</a></li>
+                          <li><a href="{% url 'sinServicio' %}">Galería</a></li>
+                          <li><a href="{% url 'clases' %}">Clases</a></li>
+                          <li><a href="{% url 'contacto' %}">Contacto</a></li>
                       </ul>
                   </div>
               </div>
@@ -181,29 +137,18 @@
                   <div class="fs-widget">
                       <h4>Support</h4>
                       <ul>
-                          <li><a href="#">Login</a></li>
-                          <li><a href="#">My account</a></li>
-                          <li><a href="#">Subscribe</a></li>
-                          <li><a href="#">Contact</a></li>
+                          <li><a href="{% url 'contacto' %}">Contacto</a></li>
                       </ul>
                   </div>
               </div>
               <div class="col-lg-4 col-md-6">
                   <div class="fs-widget">
-                      <h4>Tips & Guides</h4>
+                      <h4>Tips & Guías</h4>
                       <div class="fw-recent">
-                          <h6><a href="#">Physical fitness may help prevent depression, anxiety</a></h6>
-                          <ul>
-                              <li>3 min read</li>
-                              <li>20 Comment</li>
-                          </ul>
+                          <h6><a href="#">La aptitud física puede ayudar a prevenir la depresión y la ansiedad.</a></h6>
                       </div>
                       <div class="fw-recent">
-                          <h6><a href="#">Fitness: The best exercise to lose belly fat and tone up...</a></h6>
-                          <ul>
-                              <li>3 min read</li>
-                              <li>20 Comment</li>
-                          </ul>
+                          <h6><a href="#">Fitness: El mejor ejercicio para perder grasa abdominal y tonificar ..</a></h6>
                       </div>
                   </div>
               </div>
