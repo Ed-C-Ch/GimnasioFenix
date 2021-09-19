@@ -1,0 +1,158 @@
+#tarjetas{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 50vh;
+    background: #141414;
+    font-family: 'nunito', sans-serif;
+    padding: 0 20px;
+    padding-left: 20%;
+}
+
+#tarjetas2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    background: #141414;
+    font-family: 'nunito', sans-serif;
+    padding: 0 20px;
+    padding-left: 20%;
+}
+
+#tarjetas3{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 50vh;
+    background: #141414;
+    font-family: 'nunito', sans-serif;
+    padding: 0 20px;
+    padding-left: 20%;
+}
+
+#tarjetas h2, h4{
+    color: white;
+}
+
+.card-container{
+    display: flex;
+    width: 600px;
+    height: auto;
+    background: #0c0c0c;
+    border-radius: 2px;
+    box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, .2);
+}
+
+#header-card{
+    border-right: 1px solid white;
+}
+
+#header-card, #desc-card{
+    padding: 20px;
+    text-align: center;
+}
+
+#header-card a{
+    position: relative;
+    display: block;
+}
+
+#header-card .imagen-entrenador{
+    border-radius: 50%;
+    box-shadow: 0 0 0 8px  #141414;
+    margin: 5px 5px;
+    transition: .2s;
+}
+
+#header-card a:hover .imagen-entrenador{
+    box-shadow: 0 0 0 8px  #141414;
+}
+
+#header-card h2{
+    color: #63c3db;
+    font-size: 30px;
+    padding-bottom: 3%;
+    padding-top: 10px;
+}
+
+#header-card h4{
+    margin-bottom: 20px;
+}
+
+#desc-card{
+    position: relative;
+}
+
+#desc-card p{
+    margin: 20px 30px;
+}
+
+.card-container .iconos-card{
+    display: inline-block;
+    padding: 0 15px;
+    color: #63c3db;
+}
+
+@media (max-width:640px){
+    #tarjetas{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50vh;
+        background: #141414;
+        font-family: 'nunito', sans-serif;
+        padding: 0 20px;
+        padding-top: 85%;
+        padding-bottom: 100%;
+    }
+
+    #tarjetas2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50vh;
+        background: #141414;
+        font-family: 'nunito', sans-serif;
+        padding: 0 20px;
+        padding-top: 55%;
+        padding-bottom: 100%;
+    }
+
+    #tarjetas3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50vh;
+        background: #141414;
+        font-family: 'nunito', sans-serif;
+        padding: 0 20px;
+        padding-top: 55%;
+        padding-bottom: 80%;
+    }
+    
+
+    .card-container{
+        display: block;
+    }
+
+    #header-card{
+        padding: 20px 20px 5px 20px;
+        border: none;
+    }
+
+    #desc-card{
+        padding: 5px 20px 20px 20px;
+    }
+
+    #header-card h4{
+        margin: 0;
+    }
+
+    .card-container .iconos-card{
+        display: inline-block;
+        padding-left: 10%;
+        padding-bottom: 5%;
+        color: #63c3db;
+    }
+}

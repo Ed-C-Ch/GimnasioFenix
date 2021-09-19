@@ -3,6 +3,8 @@
 
     {% block content %}
 
+    <link rel="stylesheet" href="{% static 'core/css/tarjetas.css' %}">
+
     <div class="contenedor">
         <img src="{% static 'core/img/portada-contacto.jpg' %}" />
         <div class="carousel-caption d-none d-md-block" style="font-size: 1vw; padding-bottom: 7%;">
@@ -13,7 +15,7 @@
     <!-- Breadcrumb Section End -->
 
     <!-- ChoseUs Section Begin -->
-    <section class="choseus-section spad">
+    <section style="padding-top: 5%;" class="choseus-section spad">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -60,51 +62,64 @@
         </div>
     </section>
 
-
-    <section style="background-color: black;" class="seccion-entrenadores">
-        <div>
-            <div class="card" style="width: 18rem; background-color: #141414;">
-                <img src="{% static 'core/img/imagen-rodrigo.png' %}" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title" style="color: white;">Rodrigo Ezpinoza</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a target="_blank" href="https://www.instagram.com/rodrigonicolase.lopez15/" class="btn btn-primary">Ver perfil</a>
-                </div>
-              </div>
-              <div class="card" style="width: 18rem; background-color: #141414;">
-                <img src="{% static 'core/img/imagen-rodrigo.png' %}" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title" style="color: white;">Rodrigo Ezpinoza</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a target="_blank" href="https://www.instagram.com/rodrigonicolase.lopez15/" class="btn btn-primary">Ver perfil</a>
-                </div>
-              </div>
-              <div class="card" style="width: 18rem; background-color: #141414;">
-                <img src="{% static 'core/img/imagen-rodrigo.png' %}" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title" style="color: white;">Rodrigo Ezpinoza</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a target="_blank" href="https://www.instagram.com/rodrigonicolase.lopez15/" class="btn btn-primary">Ver perfil</a>
-                </div>
-              </div>
-              <div class="card" style="width: 18rem; background-color: #141414;">
-                <img src="{% static 'core/img/imagen-rodrigo.png' %}" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title" style="color: white;">Rodrigo Ezpinoza</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a target="_blank" href="https://www.instagram.com/rodrigonicolase.lopez15/" class="btn btn-primary">Ver perfil</a>
-                </div>
-              </div>
-              <div class="card" style="width: 18rem; background-color: #141414;">
-                <img src="{% static 'core/img/imagen-rodrigo.png' %}" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title" style="color: white;">Rodrigo Ezpinoza</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a target="_blank" href="https://www.instagram.com/rodrigonicolase.lopez15/" class="btn btn-primary">Ver perfil</a>
-                </div>
-              </div>
+    <div class="containe" id="tarjetas">
+      <div class="card-container">
+        <div class="header" id="header-card">
+          <a href="#">
+            <img class="imagen-entrenador" src="{% static 'core/img/imagen-rodrigo.png' %}" alt="">
+          </a>
+          <h2>Rodrigo Ezpinoza</h2>
+          <h4>Acondicionador Físico</h4>
         </div>
-    </section>
+        <div class="descripcion" id="desc-card">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam ipsum temporibus iure corrupti exercitationem provident ex nihil repellendus quo ducimus nulla numquam iste consectetur, eos quia minus consequatur veritatis mollitia!</p>
+        </div>
+        <div class="iconos-card">
+          <a href="#"><img src="{% static 'core/img/icono-face.png' %}" alt=""></a>
+          <a href="#"><img src="{% static 'core/img/icono-insta.png' %}" alt=""></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="containe" id="tarjetas2">
+      <div class="card-container">
+        <div class="header" id="header-card">
+          <a href="#">
+            <img class="imagen-entrenador" src="{% static 'core/img/imagen-rodrigo.png' %}" alt="">
+          </a>
+          <h2>Rodrigo Ezpinoza</h2>
+          <h4>Acondicionador Físico</h4>
+        </div>
+        <div class="descripcion" id="desc-card">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam ipsum temporibus iure corrupti exercitationem provident ex nihil repellendus quo ducimus nulla numquam iste consectetur, eos quia minus consequatur veritatis mollitia!</p>
+        </div>
+        <div class="iconos-card">
+          <a href="#"><img src="{% static 'core/img/icono-face.png' %}" alt=""></a>
+          <a href="#"><img src="{% static 'core/img/icono-insta.png' %}" alt=""></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="containe" id="tarjetas3">
+      <div class="card-container">
+        <div class="header" id="header-card">
+          <a href="#">
+            <img class="imagen-entrenador" src="{% static 'core/img/imagen-rodrigo.png' %}" alt="">
+          </a>
+          <h2>Rodrigo Ezpinoza</h2>
+          <h4>Acondicionador Físico</h4>
+        </div>
+        <div class="descripcion" id="desc-card">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam ipsum temporibus iure corrupti exercitationem provident ex nihil repellendus quo ducimus nulla numquam iste consectetur, eos quia minus consequatur veritatis mollitia!</p>
+        </div>
+        <div class="iconos-card">
+          <a href="#"><img src="{% static 'core/img/icono-face.png' %}" alt=""></a>
+          <a href="#"><img src="{% static 'core/img/icono-insta.png' %}" alt=""></a>
+        </div>
+      </div>
+    </div>
+
+    
 
 
    
